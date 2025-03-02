@@ -5,7 +5,7 @@
         "dev": "vite",
         "build": "vite build",
         "watch": "vite build --watch",
-        "watch-poll": "cross-env VITE_WATCH_POLL=100000 vite build --watch"
+        "watch-poll": "cross-env VITE_WATCH_POLL=10000 vite build --watch"
     },
     "devDependencies": {
         "@headlessui/react": "^1.4.2",

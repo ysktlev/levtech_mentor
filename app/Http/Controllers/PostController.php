@@ -14,4 +14,8 @@ class PostController extends Controller
         // dd($test); //確認用に追加
         return Inertia::render("Post/Index",["posts" => $post->get()]);
     }
+    public function show(Post $post)
+    {
+        return Inertia::render("Post/Show", ["post" => $post]);
+    }
 }

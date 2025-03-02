@@ -19,6 +19,10 @@ const Show = (props) => {
                     <h3>本文</h3>
                     <p>{ post.body }</p>
                 </div>
+
+                <div>
+                    <Link href={`/posts/${post.id}/edit`}>編集</Link>
+                </div>
                 
                 <div>
                     <Link href="/posts">戻る</Link>

@@ -10,4 +10,9 @@ export default defineConfig({
         }),
         react(),
     ],
+    build: {
+        watch: {
+            poll: process.env.VITE_WATCH_POLL ? Number(process.env.VITE_WATCH_POLL) : undefined
+        }
+    }
 });

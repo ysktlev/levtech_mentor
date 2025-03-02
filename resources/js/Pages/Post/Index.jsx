@@ -13,14 +13,16 @@ const Index = (props) => {
             
             <div className="p-12">
                 <h1>Blog Name</h1>
-                <div>
-                    <div>
-                        <h2>Title</h2>
-                        <p>This is a simple body.</p>
+                { posts.map((post) => (
+                    <div key={post.id}>
+                        <h2>{ post.title }</h2>
+                        <p>{ post.body }</p>
                     </div>
-                </div>
+                )) }
             </div>
-            
+            <div className = "p-4">
+                <p>test</p>
+            </div>
         </Authenticated>
         );
 }

@@ -42,6 +42,8 @@ Route::group(["middleware" => ["auth"]], function() {
     Route::get("/posts/create", [PostController::class, "create"])->name('create');
     Route::post("/posts", [PostController::class, "store"])->name('store');
     Route::get("/posts/{post}", [PostController::class, "show"])->name('show');
+    Route::get('/posts/{post}/edit', [PostController::class, "edit"])->name('edit');
+    Route::put('/posts/{post}', [PostController::class, "update"])->name('update');
  });
 
 require __DIR__.'/auth.php';

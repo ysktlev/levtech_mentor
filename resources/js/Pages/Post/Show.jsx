@@ -21,7 +21,12 @@ const Show = (props) => {
                 </div>
 
                 <div>
-                    <Link href={`/posts/${post.id}/edit`}>編集</Link>
+                    <h3>カテゴリー</h3>
+                    <p>{ post.category.name }</p>
+                </div>
+
+                <div>
+                    [<Link href={`/posts/${post.id}/edit`}>編集</Link>]
                 </div>
                 
                 <div>

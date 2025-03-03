@@ -18,5 +18,9 @@ export default {
         },
     },
 
+    corePlugins: {
+        preflight: false, // Preflight を無効化
+    },
+
     plugins: [forms],
 };
